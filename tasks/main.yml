@@ -1,0 +1,5 @@
+---
+- name: Install Alfred via Homebrew Cask
+  homebrew_cask:
+    name: alfred
+  when: ansible_os_family == "Darwin"
